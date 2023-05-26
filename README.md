@@ -2,7 +2,7 @@
 
 Jest to aplikacja służąca do tworzenia i przechowywania własnych przepisów.
 Aplikacja posiada takie funkcje jak:
-- Wyświetlanie stworzonych przepisów (nazwa przepisu, zdjęce potrawy, lista składników, sposób przygotowania)
+- Wyświetlanie stworzonych przepisów (nazwa przepisu, zdjęcie potrawy, lista składników, sposób przygotowania)
 - Tworzenie nowych przepisów
 - Edycja już stworzonych przepisów
 - Usuwanie przepisów
