@@ -70,8 +70,8 @@ const RecipeList = () => {
                             <div className='w-2/3'>
                                 <div className='text-xl mb-2 font-bold'>Składniki:</div>
                                 <ul>
-                                    {recipe.ingredients.map((ingredient, index) => (
-                                        <li key={index} className='font-semibold'>
+                                    {recipe.ingredients.map((ingredient) => (
+                                        <li key={ingredient.id} className='font-semibold'>
                                             {ingredient.name} - {ingredient.quantity} g
                                         </li>
                                     ))}
