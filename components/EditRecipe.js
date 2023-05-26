@@ -60,6 +60,7 @@ const EditRecipe = ({ recipe, onSaveChanges }) => {
                             className="w-[27.4rem] ml-4 rounded-md border-[1px] border-[#392a56] text-black pl-2"
                             type="text"
                             name="imageUrl"
+                            key={Math.random}
                             value={editedRecipe.imageUrl}
                             onChange={handleInputChange}
                         />

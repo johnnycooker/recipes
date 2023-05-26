@@ -63,6 +63,7 @@ const AddRecipe = () => {
                                     type="text"
                                     name="name"
                                     value={recipeData.name}
+                                    key={Math.random}
                                     onChange={(e) =>
                                         setRecipeData({ ...recipeData, name: e.target.value })
                                     }
