@@ -8,7 +8,7 @@ Aplikacja posiada takie funkcje jak:
 - Usuwanie przepisów
 
 ### Jak sprawdzić działanie aplikacji
-Wejść w podany link: [recipes-recruitment-task.app]([https://zwit.vercel.app](https://recipes-recruitment-task.vercel.app/))
+Wejść w podany link: [recipes-recruitment-task.app](https://zwit.vercel.app](https://recipes-recruitment-task.vercel.app)
 
 lub
 
