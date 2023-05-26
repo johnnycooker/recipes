@@ -64,29 +64,27 @@ const RecipeList = () => {
         <Layout>
             <div className='w-3/5 flex flex-col mx-auto'>
                 {recipes.map((recipe) => (
-                    <div className='flex flex-col rounded-md w-fit px-10 py-5 bg-opacity-30 mb-8'>
-                        <div key={recipe.id} >
-                            <div className='flex justify-center text-4xl font-semibold mb-[3rem] text-[#392a56] uppercase'>{recipe.name}</div>
-                            <div className='w-full flex flex-row'>
-                                <div className='w-2/3'>
-                                    <div className='text-xl mb-2 font-bold'>Składniki:</div>
-                                    <ul>
-                                        {recipe.ingredients.map((ingredient, index) => (
-                                            <li key={index} className='font-semibold'>
-                                                {ingredient.name} - {ingredient.quantity} g
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <img className='w-[22rem] h-[15rem] ml-4 mb-4' src={recipe.imageUrl} alt={recipe.name} />
+                    <div className='flex flex-col rounded-md w-fit px-10 py-5 bg-opacity-30 mb-8' key={recipe.id}>
+                        <div className='flex justify-center text-4xl font-semibold mb-[3rem] text-[#392a56] uppercase'>{recipe.name}</div>
+                        <div className='w-full flex flex-row'>
+                            <div className='w-2/3'>
+                                <div className='text-xl mb-2 font-bold'>Składniki:</div>
+                                <ul>
+                                    {recipe.ingredients.map((ingredient, index) => (
+                                        <li key={index} className='font-semibold'>
+                                            {ingredient.name} - {ingredient.quantity} g
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className='mt-6 text-justify'>
-                                <p>{recipe.instructions}</p>
-                            </div>
-                            <div className='flex gap-4 pt-4 mb-8'>
-                                <Button type="button" onClick={() => handleDeleteRecipe(recipe.id)}>Usuń</Button>
-                                <Button type="button" onClick={() => handleEditRecipe(recipe)}>Edytuj</Button>
-                            </div>
+                            <img className='w-[22rem] h-[15rem] ml-4 mb-4' src={recipe.imageUrl} alt={recipe.name} />
+                        </div>
+                        <div className='mt-6 text-justify'>
+                            <p>{recipe.instructions}</p>
+                        </div>
+                        <div className='flex gap-4 pt-4 mb-8'>
+                            <Button type="button" onClick={() => handleDeleteRecipe(recipe.id)}>Usuń</Button>
+                            <Button type="button" onClick={() => handleEditRecipe(recipe)}>Edytuj</Button>
                         </div>
                     </div>
                 ))}
